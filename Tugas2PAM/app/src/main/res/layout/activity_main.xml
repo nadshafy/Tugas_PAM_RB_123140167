@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="36dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/tvRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read: 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALL"
+                android:background="@drawable/btn_filter_pastel_blue"
+                android:textColor="@color/filter_text_pastel_blue" />
+
+            <Button
+                android:id="@+id/btnTech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TECH"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/btn_filter_pastel_blue"
+                android:textColor="@color/filter_text_pastel_blue" />
+
+            <Button
+                android:id="@+id/btnSport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPORT"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/btn_filter_pastel_blue"
+                android:textColor="@color/filter_text_pastel_blue" />
+
+            <Button
+                android:id="@+id/btnBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUSINESS"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/btn_filter_pastel_blue"
+                android:textColor="@color/filter_text_pastel_blue" />
+
+            <Button
+                android:id="@+id/btnHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEALTH"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/btn_filter_pastel_blue"
+                android:textColor="@color/filter_text_pastel_blue" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
